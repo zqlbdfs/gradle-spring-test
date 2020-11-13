@@ -1,0 +1,4 @@
+rootProject.name = 'gradle-spring'
+include 'my-common'
+include 'my-web'
+

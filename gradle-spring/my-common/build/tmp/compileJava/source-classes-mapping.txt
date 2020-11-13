@@ -1,0 +1,5 @@
+com/my/common/util/TestUtil.java
+ com.my.common.util.TestUtil
+com/my/common/entity/MyUser.java
+ com.my.common.entity.MyUser
+ com.my.common.entity.MyUser$MyUserBuilder
