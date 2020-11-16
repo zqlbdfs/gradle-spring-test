@@ -1,0 +1,12 @@
+
+//引入springboot-parent,和依赖管理,这样就不用指明版本号了
+plugins{
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web"
+    ,"org.springframework.boot:spring-boot-starter-data-elasticsearch")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
