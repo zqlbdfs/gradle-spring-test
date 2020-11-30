@@ -1,0 +1,4 @@
+com/my/log/entity/MyLog.java
+ com.my.log.entity.MyLog
+com/my/log/LogMain.java
+ com.my.log.LogMain

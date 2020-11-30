@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.0.181:3306/kevin-test
+    username: root
+    password: jieyundata.com
+server:
+  port: 9933

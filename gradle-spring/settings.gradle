@@ -2,4 +2,6 @@ rootProject.name = 'gradle-spring'
 include 'my-common'
 include 'my-web'
 include 'my-es'
+include 'my-flowable'
+include 'my-log'
 

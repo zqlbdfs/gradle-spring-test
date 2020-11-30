@@ -6,27 +6,22 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
-import java.util.List;
-
 /**
  * @author kevin
- * @ClassName TestUser.java
+ * @ClassName Product.java
  * @Description TODO
- * @createTime 2020年11月16日 10:48:00
+ * @createTime 2020年11月17日 09:23:00
  */
-@Document(indexName = "test-user",type = "user")
+@Document(indexName = "test-product",type = "product")
 @Data
-public class User {
+public class Product {
+
     @Id
     private String id;
 
     @Field(type = FieldType.Text)
-    private String userName;
+    private String productId;
 
-    @Field(type = FieldType.Long)
-    private int age;
-
-    private Dept dept;
-
-    private List<String> interests;
+    @Field(type = FieldType.Double)
+    private Double price;
 }

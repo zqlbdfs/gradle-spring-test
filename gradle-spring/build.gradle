@@ -24,6 +24,7 @@ allprojects {
         annotationProcessor('org.projectlombok:lombok:' + lombok_version)
     }
 }
+
 //统一指定子项目的 group version
 subprojects {
     group 'org.example.my'

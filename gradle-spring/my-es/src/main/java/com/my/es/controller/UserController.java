@@ -30,4 +30,8 @@ public class UserController {
         userService.add(user);
     }
 
+    @RequestMapping("query")
+    public void query(@RequestBody User user){
+        userService.query(user);
+    }
 }
