@@ -1,9 +1,0 @@
-server:
-  port: 9933
-spring:
-  data:
-    elasticsearch:
-      #这里一定要注意端口号，是9300不是 9200
-      cluster-nodes: 192.168.0.181:9300
-      #如果修改过 cluster-name这里一定要配置
-      cluster-name: my-application

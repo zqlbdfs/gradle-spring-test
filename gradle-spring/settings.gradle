@@ -4,4 +4,5 @@ include 'my-web'
 include 'my-es'
 include 'my-flowable'
 include 'my-log'
+include 'my-swagger2-bootstap'
 
