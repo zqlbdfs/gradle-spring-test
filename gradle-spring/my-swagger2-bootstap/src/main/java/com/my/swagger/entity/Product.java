@@ -4,6 +4,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -18,6 +20,7 @@ public class Product extends BaseBean {
     @ApiModelProperty(value = "主键")
     private String id;
     @ApiModelProperty(value = "名称",required = true )
+    @NotBlank(message = "请传入产品名称")
     private String name;
     @ApiModelProperty(value = "数量")
     private Integer num;

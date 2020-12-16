@@ -1,8 +1,13 @@
 package com.my.swagger.entity;
 
+import com.my.swagger.validate.group.UpdateUserGroup;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 /**
  * @author kevin
@@ -13,6 +18,19 @@ import lombok.Data;
 @ApiModel(value = "用户实体")
 @Data
 public class User {
-    @ApiModelProperty(value = "用户名称",required = true)
+
+    @NotNull(message = "请传入uesrId",groups = UpdateUserGroup.class)
+    private String userId;
+
+    @ApiModelProperty(value = "用户名称", required = true)
     private String username;
+
+    private Integer age;
+
+
+    private String address;
+
+//    @Valid
+//    @NotNull
+    private Product product;
 }

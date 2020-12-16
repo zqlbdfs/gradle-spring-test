@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+#    schema: classpath:db/schema-init.sql
+##    data: classpath:db/data-h2.sql
+    url: jdbc:mysql://192.168.254.145:9345/kevin-test
+    username: root
+    password: admin123
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1 #逻辑删除
+      logic-not-delete-value: 0
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #控制台输出sql

@@ -1,0 +1,23 @@
+dependencies {
+
+    // mybatis plus -----begin
+    compile group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.3.2'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.3.1.RELEASE'
+    compile group: 'com.baomidou', name: 'mybatis-plus-generator', version: '3.3.2'
+    // https://mvnrepository.com/artifact/org.freemarker/freemarker
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.23'
+    // mybatis plus -----end
+
+    //spring test 依赖
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.1.RELEASE'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.73'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+
+
+    //引入自己编写的项目模块依赖
+    compile project(":my-common")
+    compile 'org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
